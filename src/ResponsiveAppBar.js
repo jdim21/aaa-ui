@@ -14,7 +14,7 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import aaaLogo from './aaaLogo.png'
 import aaaLogoHidden from './aaaLogoHidden.png'
-import { Popper } from '@mui/material';
+import { Popover } from '@mui/material';
 // import { ThemeProvider } from '@mui/material';
 // import theme from './AaaTheme';
 
@@ -72,6 +72,10 @@ const ResponsiveAppBar = () => {
     setAnchorEl(anchorEl ? null : event.currentTarget);
   };
 
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
   const open = Boolean(anchorEl);
   const popperId = open ? 'simple-popper' : undefined;
 
@@ -101,7 +105,16 @@ const ResponsiveAppBar = () => {
             >
               TRAITS
             </Button>
-            <Popper id={popperId} open={open} anchorEl={anchorEl} disablePortal>
+            <Popover 
+              id={popperId}
+              open={open}
+              onClose={handleClose}
+              anchorEl={anchorEl}
+              anchorOrigin={{
+                vertical: 'bottom',
+                horizontal: 'left',
+              }}
+              disablePortal>
             <Box sx=
               {{ 
                 border: 1,
@@ -114,7 +127,7 @@ const ResponsiveAppBar = () => {
             >
               Coming soon!
             </Box>
-            </Popper>
+            </Popover>
             <Button 
               id="MINT"
               key="MINT"
