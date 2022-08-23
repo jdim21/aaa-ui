@@ -13,7 +13,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import aaaLogo from './aaaLogo.png'
-import aaaLogoHidden from './aaaLogoHidden.png'
+import wagLogoHidden from './wagLogoHidden.png'
 import { Popover } from '@mui/material';
 // import { ThemeProvider } from '@mui/material';
 // import theme from './AaaTheme';
@@ -84,7 +84,7 @@ const ResponsiveAppBar = () => {
     <AppBar position="sticky">
       <Container maxWidth="xl">
         <Toolbar disableGutters >
-          <img style={{height: 48, width: 56, paddingRight: 8 }} src={aaaLogoHidden}></img>
+          <img style={{height: 48, width: 56, paddingRight: 8 }} src={wagLogoHidden}></img>
           <div/>
           <Box sx={{ justifyContent: "flex-end", flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (

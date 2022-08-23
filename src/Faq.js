@@ -27,7 +27,7 @@ const Faq = () => {
           </AccordionSummary>
           <AccordionDetails>
             <Typography color="white" fontWeight="bold">
-                We are currently recommending Martial wallet.
+                We are currently recommending Martian wallet.
             </Typography>
           </AccordionDetails>
         </Accordion>

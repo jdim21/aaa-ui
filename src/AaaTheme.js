@@ -20,7 +20,7 @@ const theme = createTheme({
   },
   typography: {
     fontFamily: [
-      'Avenir Next',
+      'Andale Mono',
     ].join(','),
     fontWeight: 400,
     color: 'white',

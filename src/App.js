@@ -1,11 +1,9 @@
 import * as React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import SaveIcon from '@mui/icons-material/Save';
 import ResponsiveAppBar from './ResponsiveAppBar';
-import { Box, Button, Container, Stack, Paper, CssBaseline } from '@mui/material';
+import { Box, Stack, Paper, CssBaseline } from '@mui/material';
 import { styled } from '@mui/material/styles';
-import aaaSurrounding from './aaaSurrounding.png';
+import wagSurrounding from './wagSurrounding.png';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from './AaaTheme';
 import Vision from './Vision';
@@ -30,7 +28,7 @@ function App() {
       <ResponsiveAppBar></ResponsiveAppBar>
       <Box sx={{ width: '100%' }}>
         <Stack spacing={0}>
-          <img ref={ref} id={"home"} className="imgFullWidth" src={aaaSurrounding}>
+          <img ref={ref} id={"home"} className="imgFullWidth" src={wagSurrounding}>
           </img>
           <Vision></Vision>
           <About></About>

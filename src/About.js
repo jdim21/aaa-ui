@@ -26,16 +26,16 @@ const About = () => {
       <Grid sx={{ px: 10, py: 5 }} container spacing={2} minHeight={160}>
         <Grid xs display="flex" justifyContent="center" alignItems="center">
           <Stack>
-            <Avatar sx={{width: 128, height: 128}} src={aaaAvatarTheGeneral} />
-            <Card sx={{my: 2}} backgroundColor={theme.palette.primary.dark}>
-              <Typography backgroundColor={theme.palette.primary.main} color="white" variant="h6" fontWeight="bold">
+            <Avatar sx={{width: 128, height: 128, ml: 1.5}} src={aaaAvatarTheGeneral} />
+            <Card sx={{my: 2, mr: 0}} backgroundColor={theme.palette.primary.dark}>
+              <Typography sx={{px: 1}} backgroundColor={theme.palette.primary.main} color="white" variant="h6" fontWeight="bold">
                   The General
               </Typography>
               <Typography backgroundColor={theme.palette.primary.main} color="white" variant="body1" fontWeight="0">
                   Developer
               </Typography>
               <Box backgroundColor={theme.palette.primary.main}>
-                <img width="24" height="24" src={discordLogo} backgroundColor={theme.palette.primary.main}>
+                <img width="24" height="24" src={discordLogo}>
                 </img>
               </Box>
             </Card>
@@ -45,14 +45,14 @@ const About = () => {
           <Stack>
             <Avatar sx={{width: 128, height: 128}} src={aaaAvatarBillyJim} />
             <Card sx={{my: 2}} backgroundColor={theme.palette.primary.dark}>
-              <Typography backgroundColor={theme.palette.primary.main} color="white" variant="h6" fontWeight="bold">
+              <Typography sx={{px: 1}} backgroundColor={theme.palette.primary.main} color="white" variant="h6" fontWeight="bold">
                   Billy Jim
               </Typography>
               <Typography backgroundColor={theme.palette.primary.main} color="white" variant="body1" fontWeight="0">
                   Artist
               </Typography>
               <Box backgroundColor={theme.palette.primary.main}>
-                <img width="24" height="24" src={discordLogo} backgroundColor={theme.palette.primary.main}>
+                <img width="24" height="24" src={discordLogo}>
                 </img>
               </Box>
             </Card>
@@ -62,14 +62,14 @@ const About = () => {
           <Stack>
             <Avatar sx={{width: 128, height: 128}} src={aaaAvatarHoyt} />
             <Card sx={{my: 2}} backgroundColor={theme.palette.primary.dark}>
-              <Typography backgroundColor={theme.palette.primary.main} color="white" variant="h6" fontWeight="bold">
+              <Typography sx={{px: 1}} backgroundColor={theme.palette.primary.main} color="white" variant="h6" fontWeight="bold">
                   Hoyt
               </Typography>
               <Typography backgroundColor={theme.palette.primary.main} color="white" variant="body1" fontWeight="2">
                   Product
               </Typography>
               <Box backgroundColor={theme.palette.primary.main}>
-                <img width="24" height="24" src={discordLogo} backgroundColor={theme.palette.primary.main}>
+                <img width="24" height="24" src={discordLogo}>
                 </img>
               </Box>
             </Card>
@@ -79,14 +79,14 @@ const About = () => {
           <Stack>
             <Avatar sx={{width: 128, height: 128}} src={aaaAvatarIntern} />
             <Card sx={{my: 2}} backgroundColor={theme.palette.primary.dark}>
-              <Typography backgroundColor={theme.palette.primary.main} color="white" variant="h6" fontWeight="bold">
+              <Typography sx={{px: 1}} backgroundColor={theme.palette.primary.main} color="white" variant="h6" fontWeight="bold">
                   The Intern
               </Typography>
               <Typography backgroundColor={theme.palette.primary.main} color="white" variant="body1" fontWeight="0">
                   The rest
               </Typography>
               <Box backgroundColor={theme.palette.primary.main}>
-                <img width="24" height="24" src={discordLogo} backgroundColor={theme.palette.primary.main}>
+                <img width="24" height="24" src={discordLogo}>
                 </img>
               </Box>
             </Card>
