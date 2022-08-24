@@ -27,7 +27,9 @@ const Faq = () => {
           </AccordionSummary>
           <AccordionDetails>
             <Typography color="white" fontWeight="bold">
-                We are currently recommending Martian wallet.
+                We are currently recommending <a href="https://martianwallet.xyz">Martian wallet.</a>
+                <br/>
+                We will be monitoring development of wallets as we approach Aptos genesis.
             </Typography>
           </AccordionDetails>
         </Accordion>

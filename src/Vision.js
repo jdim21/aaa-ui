@@ -21,14 +21,14 @@ const Vision = () => {
         We're all gonna WAG!
       </Typography>
       <div>
-      <Button variant="contained" style={{backgroundColor: theme.palette.primary.dark}} color="secondary" href="https://twitter.com" sx={{mb: 2}}>
+      <Button variant="contained" style={{backgroundColor: theme.palette.primary.dark}} color="secondary" href="https://twitter.com/wealthyaptgang" sx={{mb: 2}}>
         <Typography color="white" sx={{pr: 2}} fontWeight="bold">
           Follow us on Twitter!
         </Typography>
-        <img width="30" height="24" src={twitterLogo}></img>
+          <img style={{paddingTop: 3}} width="28" height="24" src={twitterLogo}></img>
       </Button>
       </div>
-      <Button variant="contained" style={{backgroundColor: theme.palette.primary.dark}} color="secondary" href="https://discord.com" sx={{mb: 5}}>
+      <Button variant="contained" style={{backgroundColor: theme.palette.primary.dark}} color="secondary" href="https://discord.gg/Jrf4bzpkHw" sx={{mb: 5}}>
         <Typography color="white" sx={{pr: 2}} fontWeight="bold">
           Join our discord!
         </Typography>

@@ -13,6 +13,7 @@ import aaaAvatarTheGeneral from './aaaAvatarTheGeneral.png';
 import aaaAvatarHoyt from './aaaAvatarHoyt.png';
 import aaaAvatarIntern from './aaaAvatarIntern.png';
 import discordLogo from './discordLogo.png';
+import twitterLogo from './twitterLogo.png';
 import { Avatar, Stack } from "@mui/material";
 import { sizeHeight } from "@mui/system";
 
@@ -72,7 +73,10 @@ const About = () => {
                   Product
               </Typography>
               <Box backgroundColor={theme.palette.primary.main}>
-                <br/>
+                <a href="https://twitter.com/wealthyaptgang">
+                  <img width="28" height="24" src={twitterLogo}>
+                  </img>
+                </a>
                 {/* <img width="24" height="24" src={discordLogo}>
                 </img> */}
               </Box>
