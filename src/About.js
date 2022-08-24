@@ -35,8 +35,10 @@ const About = () => {
                   Developer
               </Typography>
               <Box backgroundColor={theme.palette.primary.main}>
-                <img width="24" height="24" src={discordLogo}>
-                </img>
+                <a href="https://discordapp.com/users/1008504367160238270">
+                  <img width="24" height="24" src={discordLogo}>
+                  </img>
+                </a>
               </Box>
             </Card>
           </Stack>
@@ -52,8 +54,9 @@ const About = () => {
                   Artist
               </Typography>
               <Box backgroundColor={theme.palette.primary.main}>
-                <img width="24" height="24" src={discordLogo}>
-                </img>
+                <br/>
+                {/* <img width="24" height="24" src={discordLogo}>
+                </img> */}
               </Box>
             </Card>
           </Stack>
@@ -69,8 +72,9 @@ const About = () => {
                   Product
               </Typography>
               <Box backgroundColor={theme.palette.primary.main}>
-                <img width="24" height="24" src={discordLogo}>
-                </img>
+                <br/>
+                {/* <img width="24" height="24" src={discordLogo}>
+                </img> */}
               </Box>
             </Card>
           </Stack>
@@ -86,8 +90,9 @@ const About = () => {
                   The rest
               </Typography>
               <Box backgroundColor={theme.palette.primary.main}>
-                <img width="24" height="24" src={discordLogo}>
-                </img>
+                <br/>
+                {/* <img width="24" height="24" src={discordLogo}>
+                </img> */}
               </Box>
             </Card>
           </Stack>
