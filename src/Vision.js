@@ -1,7 +1,8 @@
 import { useRef } from "react";
 import { useTheme } from '@mui/material/styles'
 import Container from '@mui/material/Container';
-import { CssBaseline, Typography } from "@mui/material";
+import { Button, CssBaseline, Typography } from "@mui/material";
+import twitterLogo from './twitterLogo.png'
 
 const Vision = () => {
   const theme = useTheme();
@@ -17,6 +18,12 @@ const Vision = () => {
         The AAA team are NFT lovers and crypto enthusiasts looking to foster a like-minded community
         to explore and support the Aptos Network.
       </Typography>
+      <Button variant="contained" style={{backgroundColor: theme.palette.primary.dark}} color="secondary" href="https://twitter.com" sx={{mb: 5}}>
+        <Typography color="white" sx={{pr: 2}} fontWeight="bold">
+          Follow us on Twitter!
+        </Typography>
+        <img width="30" height="24" src={twitterLogo}></img>
+      </Button>
     </Container>);
 }
 
