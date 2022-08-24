@@ -18,6 +18,7 @@ const Vision = () => {
         and a doge themed PFP collection is a crucial part to having fun!
         The AAA team are NFT lovers and crypto enthusiasts looking to foster a like-minded community
         to explore and support the Aptos Network.
+        We're all gonna WAG!
       </Typography>
       <div>
       <Button variant="contained" style={{backgroundColor: theme.palette.primary.dark}} color="secondary" href="https://twitter.com" sx={{mb: 2}}>
