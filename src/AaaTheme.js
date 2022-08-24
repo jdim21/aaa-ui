@@ -20,7 +20,7 @@ const theme = createTheme({
   },
   typography: {
     fontFamily: [
-      'Andale Mono',
+      'Arial Black',
     ].join(','),
     fontWeight: 400,
     color: 'white',
