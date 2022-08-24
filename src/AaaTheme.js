@@ -20,7 +20,7 @@ const theme = createTheme({
   },
   typography: {
     fontFamily: [
-      'Arial Black',
+      "Inter","Noto Sans SC","Noto Sans JP","Noto Sans KR","Roboto","-apple-system","BlinkMacSystemFont","Segoe UI","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue","Helvetica","Arial","sans-serif"
     ].join(','),
     fontWeight: 400,
     color: 'white',
