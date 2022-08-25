@@ -23,12 +23,14 @@ const About = () => {
   return (
     <div style={{backgroundColor: theme.palette.primary.light}} fontFamily={theme.typography.fontFamily} ref={ref} id={"about"}>
       <Typography color={theme.palette.primary.dark} sx={{pt: 5, pb: 1}} variant="h3" fontWeight="bold">ABOUT</Typography>
-      <Box sx={{ flexGrow: 1 }}>
-      <Grid sx={{ px: 10, py: 5 }} container spacing={2} minHeight={160}>
-        <Grid xs display="flex" justifyContent="center" alignItems="center">
+      {/* <Grid display="flex" sx={{ px: 10, py: 5 }} container spacing={2} minHeight={160} columnSpacing={3} wrap="wrap" style={{flexWrap:"wrap"}}> */}
+      {/* <Box sx={{display: 'flex', flexWrap: 'wrap'}}> */}
+      <div style={{display: 'flex', flexWrap: 'wrap', justifyContent:'space-evenly'}}>
+        {/* <Grid xs display="flex" justifyContent="center" alignItems="center" flexDirection="row"> */}
           <Stack>
+          {/* <div style={{display:"flex"}}> */}
             <Avatar sx={{width: 128, height: 128, ml: 1.5}} src={aaaAvatarTheGeneral} />
-            <Card sx={{my: 2, mr: 0}} backgroundColor={theme.palette.primary.dark}>
+            <Card sx={{my: 2, mr: 0, maxWidth:150}} backgroundColor={theme.palette.primary.dark}>
               <Typography sx={{px: 1}} backgroundColor={theme.palette.primary.main} color="white" variant="h6" fontWeight="bold">
                   The General
               </Typography>
@@ -43,11 +45,13 @@ const About = () => {
               </Box>
             </Card>
           </Stack>
-        </Grid>
-        <Grid xs display="flex" justifyContent="center" alignItems="center">
+          {/* </div> */}
+        {/* </Grid> */}
+        {/* <Grid xs display="flex" justifyContent="center" alignItems="center" flexDirection="row"> */}
           <Stack>
+          {/* <div style={{display:"flex"}}> */}
             <Avatar sx={{width: 128, height: 128}} src={aaaAvatarBillyJim} />
-            <Card sx={{my: 2}} backgroundColor={theme.palette.primary.dark}>
+            <Card sx={{my: 2, maxWidth:150}} backgroundColor={theme.palette.primary.dark}>
               <Typography sx={{px: 1}} backgroundColor={theme.palette.primary.main} color="white" variant="h6" fontWeight="bold">
                   Billy Jim
               </Typography>
@@ -61,11 +65,13 @@ const About = () => {
               </Box>
             </Card>
           </Stack>
-        </Grid>
-        <Grid xs display="flex" justifyContent="center" alignItems="center">
+          {/* </div> */}
+        {/* </Grid> */}
+        {/* <Grid xs display="flex" justifyContent="center" alignItems="center" flexDirection="row"> */}
           <Stack>
+          {/* <div style={{display:"flex"}}> */}
             <Avatar sx={{width: 128, height: 128}} src={aaaAvatarHoyt} />
-            <Card sx={{my: 2}} backgroundColor={theme.palette.primary.dark}>
+            <Card sx={{my: 2, maxWidth:150}} backgroundColor={theme.palette.primary.dark}>
               <Typography sx={{px: 1}} backgroundColor={theme.palette.primary.main} color="white" variant="h6" fontWeight="bold">
                   Hoyt
               </Typography>
@@ -82,11 +88,13 @@ const About = () => {
               </Box>
             </Card>
           </Stack>
-        </Grid>
-        <Grid xs display="flex" justifyContent="center" alignItems="center">
+          {/* </div> */}
+        {/* </Grid> */}
+        {/* <Grid xs display="flex" justifyContent="center" alignItems="center" flexDirection="row"> */}
           <Stack>
+          {/* <div style={{display:"flex"}}> */}
             <Avatar sx={{width: 128, height: 128}} src={aaaAvatarIntern} />
-            <Card sx={{my: 2}} backgroundColor={theme.palette.primary.dark}>
+            <Card sx={{my: 2, maxWidth:150}} backgroundColor={theme.palette.primary.dark}>
               <Typography sx={{px: 1}} backgroundColor={theme.palette.primary.main} color="white" variant="h6" fontWeight="bold">
                   The Intern
               </Typography>
@@ -100,33 +108,10 @@ const About = () => {
               </Box>
             </Card>
           </Stack>
-        </Grid>
-      </Grid>
-    </Box>
-      {/* <Box sx={{ width: '100%' }}>
-      <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-        <Grid xs={6}>
-          <Item>1</Item>
-        </Grid>
-        <Grid xs={6}>
-          <Item>2</Item>
-        </Grid>
-        <Grid xs={6}>
-          <Item>3</Item>
-        </Grid>
-        <Grid xs={6}>
-          <Item>4</Item>
-        </Grid>
-      </Grid> */}
-        {/* <Grid container spacing={2} columns={2}>
-          <Grid xs={1} md="auto">
-            <Item>The General</Item>
-          </Grid>
-          <Grid xs={1} md="auto">
-            <Item>Billy</Item>
-          </Grid>
-        </Grid> */}
-      {/* </Box> */}
+          {/* </div> */}
+        {/* </Grid> */}
+      </div>
+      {/* </Grid> */}
     </div>);
 }
 
