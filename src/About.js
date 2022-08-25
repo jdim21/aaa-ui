@@ -25,7 +25,7 @@ const About = () => {
       <Typography color={theme.palette.primary.dark} sx={{pt: 5, pb: 1}} variant="h3" fontWeight="bold">ABOUT</Typography>
       {/* <Grid display="flex" sx={{ px: 10, py: 5 }} container spacing={2} minHeight={160} columnSpacing={3} wrap="wrap" style={{flexWrap:"wrap"}}> */}
       {/* <Box sx={{display: 'flex', flexWrap: 'wrap'}}> */}
-      <div style={{display: 'flex', flexWrap: 'wrap', justifyContent:'space-evenly'}}>
+      <div style={{display: 'flex', flexWrap: 'wrap', justifyContent:'space-evenly', marginBottom: "3rem"}}>
         {/* <Grid xs display="flex" justifyContent="center" alignItems="center" flexDirection="row"> */}
           <Stack>
           {/* <div style={{display:"flex"}}> */}
