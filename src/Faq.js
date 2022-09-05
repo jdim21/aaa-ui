@@ -43,7 +43,8 @@ const Faq = () => {
           </AccordionSummary>
           <AccordionDetails>
             <Typography color="white" fontWeight="bold">
-                Nope!
+                Not exactly! Our earliest WAG crew will receive an exclusive WAG-list role. We will release details on 
+                role benefits soon!
             </Typography>
           </AccordionDetails>
         </Accordion>
