@@ -79,31 +79,39 @@ const Mint = () => {
 async function mintWag(){
   // Create a transaction
   try {
-    const response = await window.martian.connect();
-    const sender = response.address;
-    const payload = {
-      function: "0x1::coin::transfer",
-      type_arguments: ["0x1::aptos_coin::AptosCoin"],
-      arguments: ["0xa6fd9de4c08b39838bd06729f193bf70f7cb7a61647ea0b564d25e278ad75f1e", 200000000]
-    };
-    const transaction = await window.martian.generateTransaction(sender, payload);
-    const txnHash = await window.martian.signAndSubmitTransaction(transaction);
-    // console.log("txnHash; " + JSON.stringify(txnHash));
-    const requestOptions = {
-      method: "POST",
-      headers: { 'Content-Type': 'application/json' },
+    const network = await window.martian.network();
+    if (network != "Mainnet"){
+      alert ("Please use mainnet!");
     }
-    const url = apiGateway + 'mint-payment?address=' + sender + '&txnHash=' + txnHash;
-    // const url = 'http://localhost:3001/mint-payment?address=' + sender + '&txnHash=' + txnHash;
-    // const url = 'http://localhost:3001/mint-payment?address=' + JSON.stringify(sender) + '&txnHash=' + JSON.stringify(txnHash);
-    // console.log("url to fetch: " + url);
-    const fetchRes = await fetch(
-      url, requestOptions
-    ).then(response => {
-      // console.log(response.statusText);
-      return response.text();
-    }).catch(e => JSON.stringify(e));
-    // console.log("fetchRes: " + fetchRes);
+    else
+    {
+      const response = await window.martian.connect();
+      const sender = response.address;
+      const payload = {
+        function: "0x1::coin::transfer",
+        type_arguments: ["0x1::aptos_coin::AptosCoin"],
+        arguments: ["0xa6fd9de4c08b39838bd06729f193bf70f7cb7a61647ea0b564d25e278ad75f1e", 200000000]
+      };
+      const transaction = await window.martian.generateTransaction(sender, payload);
+      const txnHash = await window.martian.signAndSubmitTransaction(transaction);
+      // console.log("txnHash; " + JSON.stringify(txnHash));
+      const requestOptions = {
+        method: "POST",
+        headers: { 'Content-Type': 'application/json' },
+      }
+      const url = apiGateway + 'mint-payment?address=' + sender + '&txnHash=' + txnHash;
+      // const url = 'http://localhost:3001/mint-payment?address=' + sender + '&txnHash=' + txnHash;
+      // const url = 'http://localhost:3001/mint-payment?address=' + JSON.stringify(sender) + '&txnHash=' + JSON.stringify(txnHash);
+      // console.log("url to fetch: " + url);
+      const fetchRes = await fetch(
+        url, requestOptions
+      ).then(response => {
+        // console.log(response.statusText);
+        return response.text();
+      }).catch(e => JSON.stringify(e));
+      // console.log("fetchRes: " + fetchRes);
+
+    }
   } catch (e) {
     console.log("Error minting: " + JSON.stringify(e));
   } 
