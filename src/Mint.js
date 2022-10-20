@@ -44,7 +44,7 @@ const Mint = () => {
     <Footer></Footer>
       <Box sx={{
         width: 500,
-        height: 500,
+        height: 530,
         backgroundColor: 'primary.main',
         margin: "0 auto", 
         marginTop: "2rem",
@@ -63,7 +63,9 @@ const Mint = () => {
           CLAIM MINT
         </Button>
         <div style={{marginTop: "1rem"}}></div>
-        <Typography color={"white"} sx={{pt: 5, pb: 1}} variant="p" fontWeight="bold">Remaining: {remaining.toString()} / 5000</Typography>
+        <Typography color={"white"} sx={{pt: 0, pb: 1}} variant="h6" fontWeight="bold">Cost: 2 APT</Typography>
+        <div></div>
+        <Typography color={"white"} sx={{pt: 2, pb: 2}} variant="p" fontWeight="bold">Remaining: {remaining.toString()} / 5000</Typography>
       </Box>
       <Typography color={theme.palette.primary.dark} sx={{pt: 5, pb: 1}} variant="h4" fontWeight="bold">Instructions:</Typography>
       <Typography color={theme.palette.primary.dark} sx={{pt: 0, pb: 1}} variant="h6" fontWeight="bold">1: Make sure you have the Martian Wallet Extension installed.</Typography>
