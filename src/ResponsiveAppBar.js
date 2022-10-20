@@ -15,6 +15,7 @@ import AdbIcon from '@mui/icons-material/Adb';
 import aaaLogo from './aaaLogo.png'
 import wagLogoHidden from './wagLogoHidden.png'
 import { Popover } from '@mui/material';
+import { Link } from "react-router-dom";
 // import { ThemeProvider } from '@mui/material';
 // import theme from './AaaTheme';
 
@@ -44,6 +45,12 @@ const ResponsiveAppBar = () => {
       );
     } else if (event.currentTarget.id == "TRAITS") {
       alert("Coming soon!");
+      console.log("traits selected..");
+    } else if (event.currentTarget.id == "MINT") {
+      // anchor = (event.target.ownerDocument || document).querySelector(
+      //   "#mint"
+      // );
+      console.log("mint selected..");
     }
     if (anchor) {
       anchor.scrollIntoView({ behavior: "smooth", block: "center" });
@@ -129,10 +136,10 @@ const ResponsiveAppBar = () => {
             </Box>
             </Popover>
             <Button 
+              href="mint"
               id="MINT"
               key="MINT"
               sx={{ my: 2, color: 'white', display: 'block', fontWeight: 'bold', fontSize: 16, px: 2 }}
-              disabled
             >
               MINT
             </Button>
