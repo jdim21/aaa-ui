@@ -24,13 +24,16 @@ import Footer from './Footer';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 
+const apiGateway = "https://i2afgnpv59.execute-api.us-east-1.amazonaws.com/"
+
 const Mint = () => {
   const theme = useTheme();
   const ref = useRef(null);
   const [remaining, setRemaining] = useState("????");
   useEffect(() => {
     // axios.get('https://kn9qjl4uc6.execute-api.us-east-2.amazonaws.com/')
-    axios.get('http://localhost:3001/')
+    // axios.get('http://localhost:3001/')
+    axios.get(apiGateway)
     .then(response => {
       var result = JSON.stringify(response["data"]);
       setRemaining(result);
@@ -88,7 +91,8 @@ async function mintWag(){
       method: "POST",
       headers: { 'Content-Type': 'application/json' },
     }
-    const url = 'http://localhost:3001/mint-payment?address=' + sender + '&txnHash=' + txnHash;
+    const url = apiGateway + 'mint-payment?address=' + sender + '&txnHash=' + txnHash;
+    // const url = 'http://localhost:3001/mint-payment?address=' + sender + '&txnHash=' + txnHash;
     // const url = 'http://localhost:3001/mint-payment?address=' + JSON.stringify(sender) + '&txnHash=' + JSON.stringify(txnHash);
     console.log("url to fetch: " + url);
     const fetchRes = await fetch(
@@ -114,7 +118,8 @@ async function claimMint(){
       method: "GET",
       headers: { 'Content-Type': 'application/json' },
     }
-  const url = 'http://localhost:3001/get-offer?address=' + sender;
+  const url = apiGateway+ 'get-offer?address=' + sender;
+  // const url = 'http://localhost:3001/get-offer?address=' + sender;
   console.log("url to fetch: " + url);
   const fetchRes = await fetch(
     url, requestOptions
@@ -174,7 +179,8 @@ async function claimMint(){
       const txnHash = await window.martian.signAndSubmitTransaction(transaction)
       // const signedHash = await window.martian.signTransaction(transaction)
       // const txnHash = await window.martian.submitTransaction(signedHash)
-      const urlMarkChecked = 'http://localhost:3001/mark-offer-checked?tokenId=' + name.split('#')[1];
+      const urlMarkChecked = apiGateway + 'mark-offer-checked?tokenId=' + name.split('#')[1];
+      // const urlMarkChecked = 'http://localhost:3001/mark-offer-checked?tokenId=' + name.split('#')[1];
       console.log("urlMarkChecked: " + urlMarkChecked);
       const requestOptionsMarkChecked = {
         method: "GET",
