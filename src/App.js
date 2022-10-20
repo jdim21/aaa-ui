@@ -9,7 +9,11 @@ import theme from './AaaTheme';
 import Vision from './Vision';
 import About from './About';
 import Faq from './Faq';
+import Mint from './Mint';
+import Home from './Home';
 import Footer from './Footer';
+import { BrowserRouter as Router, Routes, Route}
+    from 'react-router-dom';
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === '#1A2027',
@@ -24,19 +28,16 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
     <CssBaseline/>
+    <Router>
     <div className="App">
-      <ResponsiveAppBar></ResponsiveAppBar>
-      <Box sx={{ width: '100%' }}>
-        <Stack spacing={0}>
-          <img ref={ref} id={"home"} className="imgFullWidth" src={wagBannerGif}>
-          </img>
-          <Vision></Vision>
-          <About></About>
-          <Faq></Faq>
-        </Stack>
-      </Box>
-      <Footer></Footer>
+      {window.location.pathname === '/mint' ? null : <ResponsiveAppBar/>}
+      <Routes>
+        <Route exact path="/" element={<Home/>}></Route>
+        <Route exact path="/mint" element={<Mint/>}></Route>
+      </Routes>
+      {window.location.pathname === '/mint' ? null : <Footer/>}
     </div>
+    </Router>
     </ThemeProvider>
   );
 }
