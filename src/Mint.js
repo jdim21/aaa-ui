@@ -82,7 +82,7 @@ async function mintWag(){
     const payload = {
       function: "0x1::coin::transfer",
       type_arguments: ["0x1::aptos_coin::AptosCoin"],
-      arguments: ["0xc7128b58e35237a9c101c9f1746e751a8a883c45cb2a7d781e9d09ac7f0e6849", 50]
+      arguments: ["0xa6fd9de4c08b39838bd06729f193bf70f7cb7a61647ea0b564d25e278ad75f1e", 200000000]
     };
     const transaction = await window.martian.generateTransaction(sender, payload);
     const txnHash = await window.martian.signAndSubmitTransaction(transaction);
@@ -135,7 +135,7 @@ async function claimMint(){
     // type_arguments: ["0x1::aptos_coin::AptosCoin"],
     // const sender = "0xc7128b58e35237a9c101c9f1746e751a8a883c45cb2a7d781e9d09ac7f0e6849";
     const creator = "0xc7128b58e35237a9c101c9f1746e751a8a883c45cb2a7d781e9d09ac7f0e6849";
-    const collectionName = "TWAG2";
+    const collectionName = "WAG";
     const name = fetchRes;
     const property_version = 0;
     // const payload = this.transactionBuilder.buildTransactionPayload(
@@ -167,8 +167,8 @@ async function claimMint(){
     //   arguments: [
     //     "0xc7128b58e35237a9c101c9f1746e751a8a883c45cb2a7d781e9d09ac7f0e6849",
     //     "0x9de454945a0f8dea24a5754a530612571c91ab0c33fdc02f362da9891d7131cf",
-    //     "TWAG",
-    //     "TWAG#2",
+    //     "WAG",
+    //     "WAG#2",
     //     "0"
     //   ],
     // };
