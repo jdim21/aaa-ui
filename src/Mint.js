@@ -86,7 +86,7 @@ async function mintWag(){
     };
     const transaction = await window.martian.generateTransaction(sender, payload);
     const txnHash = await window.martian.signAndSubmitTransaction(transaction);
-    console.log("txnHash; " + JSON.stringify(txnHash));
+    // console.log("txnHash; " + JSON.stringify(txnHash));
     const requestOptions = {
       method: "POST",
       headers: { 'Content-Type': 'application/json' },
@@ -94,14 +94,14 @@ async function mintWag(){
     const url = apiGateway + 'mint-payment?address=' + sender + '&txnHash=' + txnHash;
     // const url = 'http://localhost:3001/mint-payment?address=' + sender + '&txnHash=' + txnHash;
     // const url = 'http://localhost:3001/mint-payment?address=' + JSON.stringify(sender) + '&txnHash=' + JSON.stringify(txnHash);
-    console.log("url to fetch: " + url);
+    // console.log("url to fetch: " + url);
     const fetchRes = await fetch(
       url, requestOptions
     ).then(response => {
-      console.log(response.statusText);
+      // console.log(response.statusText);
       return response.text();
     }).catch(e => JSON.stringify(e));
-    console.log("fetchRes: " + fetchRes);
+    // console.log("fetchRes: " + fetchRes);
   } catch (e) {
     console.log("Error minting: " + JSON.stringify(e));
   } 
@@ -120,18 +120,18 @@ async function claimMint(){
     }
   const url = apiGateway+ 'get-offer?address=' + sender;
   // const url = 'http://localhost:3001/get-offer?address=' + sender;
-  console.log("url to fetch: " + url);
+  // console.log("url to fetch: " + url);
   const fetchRes = await fetch(
     url, requestOptions
   ).then(response => {
     console.log(response.statusText);
     return response.text();
   }).catch(e => JSON.stringify(e));
-  console.log("fetchRes: " + fetchRes);
+  // console.log("fetchRes: " + fetchRes);
   if (fetchRes != "unknown" && fetchRes != null && fetchRes != undefined)
   {
-    console.log("sender: " + sender);
-    console.log("fetchRes.tokenName: " + fetchRes);
+    // console.log("sender: " + sender);
+    // console.log("fetchRes.tokenName: " + fetchRes);
     // type_arguments: ["0x1::aptos_coin::AptosCoin"],
     // const sender = "0xc7128b58e35237a9c101c9f1746e751a8a883c45cb2a7d781e9d09ac7f0e6849";
     const creator = "0xc7128b58e35237a9c101c9f1746e751a8a883c45cb2a7d781e9d09ac7f0e6849";
@@ -146,8 +146,8 @@ async function claimMint(){
     // const senderAccount = await window.martian.getAccount(sender);
     // const senderAccount = new AptosAccount(undefined, sender);
     const senderAccount = new AptosAccount(undefined, sender);
-    console.log("sender: " + JSON.stringify(sender));
-    console.log("creator: " + JSON.stringify(creator));
+    // console.log("sender: " + JSON.stringify(sender));
+    // console.log("creator: " + JSON.stringify(creator));
     const payload = {
       function: "0x3::token_transfers::claim_script",
       type_arguments: [],
@@ -160,7 +160,7 @@ async function claimMint(){
         property_version
       ],
     };
-    console.log("payload: " + JSON.stringify(payload));
+    // console.log("payload: " + JSON.stringify(payload));
     // const payload = {
     //   function: "0x3::token_transfers::claim_script",
     //   type_arguments: [],
@@ -181,7 +181,7 @@ async function claimMint(){
       // const txnHash = await window.martian.submitTransaction(signedHash)
       const urlMarkChecked = apiGateway + 'mark-offer-checked?tokenId=' + name.split('#')[1];
       // const urlMarkChecked = 'http://localhost:3001/mark-offer-checked?tokenId=' + name.split('#')[1];
-      console.log("urlMarkChecked: " + urlMarkChecked);
+      // console.log("urlMarkChecked: " + urlMarkChecked);
       const requestOptionsMarkChecked = {
         method: "GET",
         headers: { 'Content-Type': 'application/json' },
@@ -189,12 +189,12 @@ async function claimMint(){
       const fetchResUpdateChecked = await fetch(
         urlMarkChecked, requestOptionsMarkChecked
       ).then(response => {
-        console.log(response.statusText);
+        // console.log(response.statusText);
         return response.text();
       }).catch(e => {
         console.log("Error updating marked checked: " + JSON.stringify(e));
       });
-      console.log("fetchRes: " + fetchRes);
+      // console.log("fetchRes: " + fetchRes);
     } catch (error) {
       console.log("Error signing and submitting transaction: " + JSON.stringify(error));
     }

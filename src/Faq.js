@@ -27,9 +27,8 @@ const Faq = () => {
           </AccordionSummary>
           <AccordionDetails>
             <Typography color="white" fontWeight="bold">
-                We are currently recommending <a href="https://martianwallet.xyz">Martian wallet.</a>
+                We love <a href="https://martianwallet.xyz">Martian wallet.</a>
                 <br/>
-                We will be monitoring development of wallets as we approach Aptos genesis.
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -43,7 +42,7 @@ const Faq = () => {
           </AccordionSummary>
           <AccordionDetails>
             <Typography color="white" fontWeight="bold">
-                Nope!
+                Minting is open to all!
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -57,7 +56,7 @@ const Faq = () => {
           </AccordionSummary>
           <AccordionDetails>
             <Typography color="white" fontWeight="bold">
-                TBD
+                <a href="https://wealthyapdogegang.com/mint">Now!</a>
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -71,7 +70,7 @@ const Faq = () => {
           </AccordionSummary>
           <AccordionDetails>
             <Typography color="white" fontWeight="bold">
-                TBD
+                5000
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -85,7 +84,7 @@ const Faq = () => {
           </AccordionSummary>
           <AccordionDetails>
             <Typography color="white" fontWeight="bold">
-                TBD
+                2 APT
             </Typography>
           </AccordionDetails>
         </Accordion>
