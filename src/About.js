@@ -12,6 +12,7 @@ import aaaAvatarBillyJim from './aaaAvatarBillyJim.png';
 import aaaAvatarTheGeneral from './aaaAvatarTheGeneral.png';
 import aaaAvatarHoyt from './aaaAvatarHoyt.png';
 import aaaAvatarIntern from './aaaAvatarIntern.png';
+import TheGeneral from './TheGeneral.png';
 import discordLogo from './discordLogo.png';
 import twitterLogo from './twitterLogo.png';
 import { Avatar, Stack } from "@mui/material";
@@ -29,7 +30,7 @@ const About = () => {
         {/* <Grid xs display="flex" justifyContent="center" alignItems="center" flexDirection="row"> */}
           <Stack>
           {/* <div style={{display:"flex"}}> */}
-            <Avatar sx={{width: 128, height: 128, ml: 1.5}} src={aaaAvatarTheGeneral} />
+            <Avatar sx={{width: 128, height: 128, ml: 1.5}} src={TheGeneral} />
             <Card sx={{my: 2, mr: 0, maxWidth:150}} backgroundColor={theme.palette.primary.dark}>
               <Typography sx={{px: 1}} backgroundColor={theme.palette.primary.main} color="white" variant="h6" fontWeight="bold">
                   The General
@@ -50,7 +51,7 @@ const About = () => {
         {/* <Grid xs display="flex" justifyContent="center" alignItems="center" flexDirection="row"> */}
           <Stack>
           {/* <div style={{display:"flex"}}> */}
-            <Avatar sx={{width: 128, height: 128}} src={aaaAvatarBillyJim} />
+            <Avatar sx={{width: 128, height: 128}} src={TheGeneral} />
             <Card sx={{my: 2, maxWidth:150}} backgroundColor={theme.palette.primary.dark}>
               <Typography sx={{px: 1}} backgroundColor={theme.palette.primary.main} color="white" variant="h6" fontWeight="bold">
                   Billy Jim
@@ -70,7 +71,7 @@ const About = () => {
         {/* <Grid xs display="flex" justifyContent="center" alignItems="center" flexDirection="row"> */}
           <Stack>
           {/* <div style={{display:"flex"}}> */}
-            <Avatar sx={{width: 128, height: 128}} src={aaaAvatarHoyt} />
+            <Avatar sx={{width: 128, height: 128}} src={TheGeneral} />
             <Card sx={{my: 2, maxWidth:150}} backgroundColor={theme.palette.primary.dark}>
               <Typography sx={{px: 1}} backgroundColor={theme.palette.primary.main} color="white" variant="h6" fontWeight="bold">
                   Hoyt
@@ -93,7 +94,7 @@ const About = () => {
         {/* <Grid xs display="flex" justifyContent="center" alignItems="center" flexDirection="row"> */}
           <Stack>
           {/* <div style={{display:"flex"}}> */}
-            <Avatar sx={{width: 128, height: 128}} src={aaaAvatarIntern} />
+            <Avatar sx={{width: 128, height: 128}} src={TheGeneral} />
             <Card sx={{my: 2, maxWidth:150}} backgroundColor={theme.palette.primary.dark}>
               <Typography sx={{px: 1}} backgroundColor={theme.palette.primary.main} color="white" variant="h6" fontWeight="bold">
                   The Intern

@@ -19,6 +19,7 @@ import { sizeHeight } from "@mui/system";
 import Button from '@mui/material/Button';
 import { AptosAccount } from "aptos";
 import wagBannerGif from './wagBannerGif.gif';
+import boizBanner from './boizBanner.png';
 import mintGif from './mintGif.gif';
 import Footer from './Footer';
 import axios from 'axios';
@@ -40,7 +41,7 @@ const Mint = () => {
     })
   }, []);
   return (
-    <div style={{height: "100vh", backgroundImage: wagBannerGif, backgroundColor: theme.palette.primary.light}} fontFamily={theme.typography.fontFamily} ref={ref} id={"mint"}>
+    <div style={{height: "100vh", backgroundImage: boizBanner, backgroundColor: theme.palette.primary.light}} fontFamily={theme.typography.fontFamily} ref={ref} id={"mint"}>
     <Footer></Footer>
       <Box sx={{
         width: 500,

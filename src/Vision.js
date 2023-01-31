@@ -13,12 +13,11 @@ const Vision = () => {
     <CssBaseline />
       <Typography color="white" sx={{pt: 5, pb: 1}} variant="h3" fontWeight="bold">VISION</Typography>
       <Typography color="white" sx={{pt: 1, pb: 5}} variant="h6" fontWeight="bold" >
-        Wealthy Apdoge Gang aims to support the genesis of the Aptos Network as we believe
-        it is the fastest and most secure layer 1 blockchain. NFTs are a crucial part of a growing ecosystem,
-        and a doge themed PFP collection is a crucial part to having fun!
-        The WAG team are NFT lovers and crypto enthusiasts looking to foster a like-minded community
-        to explore and support the Aptos Network.
-        We're all gonna WAG!
+        Blobby Boiz aim to support the genesis of the CANTO network as we believe
+        it is a fast, innovative, & secure layer 1 blockchain helping to push the boundaries. NFTs are a crucial part of a growing ecosystem,
+        and a cute PFP collection is a crucial part to having fun!
+        The Blobby Boiz team are NFT lovers and crypto enthusiasts looking to foster a like-minded community
+        to explore and support the CANTO ecosystem.
       </Typography>
       <div>
       <Button variant="contained" style={{backgroundColor: theme.palette.primary.dark}} color="secondary" href="https://twitter.com/wealthyaptgang" sx={{mb: 2}}>

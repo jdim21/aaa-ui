@@ -14,6 +14,7 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import aaaLogo from './aaaLogo.png'
 import wagLogoHidden from './wagLogoHidden.png'
+import blobbyBoizLogo from './blobbyBoizLogo.png';
 import { Popover } from '@mui/material';
 import { Link } from "react-router-dom";
 // import { ThemeProvider } from '@mui/material';
@@ -47,6 +48,7 @@ const ResponsiveAppBar = () => {
       alert("Coming soon!");
       console.log("traits selected..");
     } else if (event.currentTarget.id == "MINT") {
+      alert("Coming soon!");
       // anchor = (event.target.ownerDocument || document).querySelector(
       //   "#mint"
       // );
@@ -79,6 +81,10 @@ const ResponsiveAppBar = () => {
     setAnchorEl(anchorEl ? null : event.currentTarget);
   };
 
+  const handleMintPopper = (event) => {
+    setAnchorEl(anchorEl ? null : event.currentTarget);
+  };
+
   const handleClose = () => {
     setAnchorEl(null);
   };
@@ -91,7 +97,7 @@ const ResponsiveAppBar = () => {
     <AppBar position="sticky">
       <Container maxWidth="xl">
         <Toolbar disableGutters >
-          <img style={{height: 48, width: 56, paddingRight: 8 }} src={wagLogoHidden}></img>
+          <img style={{height: 48, width: 56, paddingRight: 8 }} src={blobbyBoizLogo}></img>
           <div/>
           <Box sx={{ justifyContent: "flex-end", flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
@@ -136,13 +142,37 @@ const ResponsiveAppBar = () => {
             </Box>
             </Popover>
             <Button 
-              href="mint"
+              // href="mint"
               id="MINT"
               key="MINT"
+              onClick={handleMintPopper}
               sx={{ my: 2, color: 'white', display: 'block', fontWeight: 'bold', fontSize: 16, px: 2 }}
             >
               MINT
             </Button>
+            <Popover 
+              id={popperId}
+              open={open}
+              onClose={handleClose}
+              anchorEl={anchorEl}
+              anchorOrigin={{
+                vertical: 'bottom',
+                horizontal: 'left',
+              }}
+              disablePortal>
+            <Box sx=
+              {{ 
+                border: 1,
+                p: 1,
+                borderColor: 'black',
+                color: '#00867d',
+                bgcolor: '#82e9de',
+                fontWeight: 'bold',
+              }}
+            >
+              Coming soon!
+            </Box>
+            </Popover>
           </Box>
 
         </Toolbar>

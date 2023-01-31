@@ -2,6 +2,7 @@ import React from 'react';
 import { Box, Stack, Paper, CssBaseline } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import wagBannerGif from './wagBannerGif.gif';
+import boizBanner from './boizBanner.png';
 import Vision from './Vision';
 import About from './About';
 import Faq from './Faq';
@@ -11,7 +12,7 @@ const Home = () => {
   return (
           <Box sx={{ width: '100%' }}>
             <Stack spacing={0}>
-              <img ref={ref} id={"home"} className="imgFullWidth" src={wagBannerGif}>
+              <img ref={ref} id={"home"} className="imgFullWidth" src={boizBanner}>
               </img>
               <Vision></Vision>
               <About></About>
