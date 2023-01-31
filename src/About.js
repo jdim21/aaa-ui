@@ -49,23 +49,6 @@ const About = () => {
           {/* </div> */}
         {/* </Grid> */}
         {/* <Grid xs display="flex" justifyContent="center" alignItems="center" flexDirection="row"> */}
-          <Stack>
-          {/* <div style={{display:"flex"}}> */}
-            <Avatar sx={{width: 128, height: 128}} src={TheGeneral} />
-            <Card sx={{my: 2, maxWidth:150}} backgroundColor={theme.palette.primary.dark}>
-              <Typography sx={{px: 1}} backgroundColor={theme.palette.primary.main} color="white" variant="h6" fontWeight="bold">
-                  Billy Jim
-              </Typography>
-              <Typography backgroundColor={theme.palette.primary.main} color="white" variant="body1" fontWeight="0">
-                  Artist
-              </Typography>
-              <Box backgroundColor={theme.palette.primary.main}>
-                <br/>
-                {/* <img width="24" height="24" src={discordLogo}>
-                </img> */}
-              </Box>
-            </Card>
-          </Stack>
           {/* </div> */}
         {/* </Grid> */}
         {/* <Grid xs display="flex" justifyContent="center" alignItems="center" flexDirection="row"> */}
@@ -77,7 +60,7 @@ const About = () => {
                   Hoyt
               </Typography>
               <Typography backgroundColor={theme.palette.primary.main} color="white" variant="body1" fontWeight="2">
-                  Product
+                  Artist
               </Typography>
               <Box backgroundColor={theme.palette.primary.main}>
                 <a href="https://twitter.com/blobbyboiz">
@@ -103,9 +86,13 @@ const About = () => {
                   The rest
               </Typography>
               <Box backgroundColor={theme.palette.primary.main}>
-                <br/>
+                {/* <br/> */}
                 {/* <img width="24" height="24" src={discordLogo}>
                 </img> */}
+                <a href="https://discordapp.com/users/<TODO>">
+                  <img width="24" height="24" src={discordLogo}>
+                  </img>
+                </a>
               </Box>
             </Card>
           </Stack>
