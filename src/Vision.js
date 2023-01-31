@@ -20,14 +20,14 @@ const Vision = () => {
         to explore and support the CANTO ecosystem.
       </Typography>
       <div>
-      <Button variant="contained" style={{backgroundColor: theme.palette.primary.dark}} color="secondary" href="https://twitter.com/wealthyaptgang" sx={{mb: 2}}>
+      <Button variant="contained" style={{backgroundColor: theme.palette.primary.dark}} color="secondary" href="https://twitter.com/blobbyboiz" sx={{mb: 2}}>
         <Typography color="white" sx={{pr: 2}} fontWeight="bold">
           Follow us on Twitter!
         </Typography>
           <img style={{paddingTop: 3}} width="28" height="24" src={twitterLogo}></img>
       </Button>
       </div>
-      <Button variant="contained" style={{backgroundColor: theme.palette.primary.dark}} color="secondary" href="https://discord.gg/Jrf4bzpkHw" sx={{mb: 5}}>
+      <Button variant="contained" style={{backgroundColor: theme.palette.primary.dark}} color="secondary" href="https://discord.gg/<TODO>" sx={{mb: 5}}>
         <Typography color="white" sx={{pr: 2}} fontWeight="bold">
           Join our discord!
         </Typography>

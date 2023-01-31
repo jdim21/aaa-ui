@@ -39,7 +39,7 @@ const About = () => {
                   Developer
               </Typography>
               <Box backgroundColor={theme.palette.primary.main}>
-                <a href="https://discordapp.com/users/1008504367160238270">
+                <a href="https://discordapp.com/users/<TODO>">
                   <img width="24" height="24" src={discordLogo}>
                   </img>
                 </a>
@@ -80,7 +80,7 @@ const About = () => {
                   Product
               </Typography>
               <Box backgroundColor={theme.palette.primary.main}>
-                <a href="https://twitter.com/wealthyaptgang">
+                <a href="https://twitter.com/blobbyboiz">
                   <img width="28" height="24" src={twitterLogo}>
                   </img>
                 </a>
