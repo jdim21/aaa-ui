@@ -33,7 +33,7 @@ const About = () => {
             <Avatar sx={{width: 128, height: 128, ml: 1.5}} src={TheGeneral} />
             <Card sx={{my: 2, mr: 0, maxWidth:150}} backgroundColor={theme.palette.primary.dark}>
               <Typography sx={{px: 1}} backgroundColor={theme.palette.primary.main} color="white" variant="h6" fontWeight="bold">
-                  The General
+                  The Duke
               </Typography>
               <Typography backgroundColor={theme.palette.primary.main} color="white" variant="body1" fontWeight="0">
                   Developer
