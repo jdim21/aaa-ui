@@ -27,7 +27,7 @@ const Vision = () => {
           <img style={{paddingTop: 3}} width="28" height="24" src={twitterLogo}></img>
       </Button>
       </div>
-      <Button variant="contained" style={{backgroundColor: theme.palette.primary.dark}} color="secondary" href="https://discord.gg/<TODO>" sx={{mb: 5}}>
+      <Button variant="contained" style={{backgroundColor: theme.palette.primary.dark}} color="secondary" href="https://discord.gg/TsYNpDqJgG" sx={{mb: 5}}>
         <Typography color="white" sx={{pr: 2}} fontWeight="bold">
           Join our discord!
         </Typography>

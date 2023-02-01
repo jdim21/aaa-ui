@@ -19,7 +19,7 @@ const Footer = () => {
         <img style={{marginBottom:26, marginRight: 26}} width="36" height="32" src={twitterLogo}></img>
       </a>
       <img width="96" height="96" src={blobbyBoizLogo}></img>
-      <a href="https://discord.gg/<TODO>">
+      <a href="https://discord.gg/TsYNpDqJgG">
         <img style={{marginBottom:26, marginLeft: 26}} width="32" height="34" src={discordLogo}></img>
       </a>
       {/* <Typography color="white" sx={{pt: 5, pb: 1}} variant="body2" fontWeight="bold">Made with love</Typography> */}
