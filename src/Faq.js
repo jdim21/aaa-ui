@@ -16,7 +16,7 @@ const Faq = () => {
     <CssBaseline />
       <Typography color="white" sx={{pt: 5, pb: 1}} variant="h3" fontWeight="bold">F.A.Q.</Typography>
       <div>
-        <Accordion style={{backgroundColor: theme.palette.primary.dark}}>
+        {/* <Accordion style={{backgroundColor: theme.palette.primary.dark}}>
           <AccordionSummary 
             backgroundColor={theme.palette.primary.light}
             expandIcon={<ExpandMoreIcon />}
@@ -30,7 +30,7 @@ const Faq = () => {
               TBD
             </Typography>
           </AccordionDetails>
-        </Accordion>
+        </Accordion> */}
         <Accordion style={{backgroundColor: theme.palette.primary.dark}}>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
@@ -41,7 +41,7 @@ const Faq = () => {
           </AccordionSummary>
           <AccordionDetails>
             <Typography color="white" fontWeight="bold">
-                We will launch on a first come first served basis.
+                It is first come, first served!
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -55,7 +55,7 @@ const Faq = () => {
           </AccordionSummary>
           <AccordionDetails>
             <Typography color="white" fontWeight="bold">
-                TBD
+                Imminently!
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -69,7 +69,7 @@ const Faq = () => {
           </AccordionSummary>
           <AccordionDetails>
             <Typography color="white" fontWeight="bold">
-                TBD
+                5000
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -83,7 +83,21 @@ const Faq = () => {
           </AccordionSummary>
           <AccordionDetails>
             <Typography color="white" fontWeight="bold">
-                TBD
+                10 CANTO
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion style={{backgroundColor: theme.palette.primary.dark}}>
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel5a-content"
+            id="panel5a-header"
+          >
+            <Typography color="white">Is there a roadmap?</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography color="white" fontWeight="bold">
+                Nope! This is a simple & fun PFP NFT collection!
             </Typography>
           </AccordionDetails>
         </Accordion>
