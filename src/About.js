@@ -41,7 +41,7 @@ const About = () => {
                   Developer
               </Typography>
               <Box backgroundColor={theme.palette.primary.main}>
-                <a href="https://discordapp.com/users/<TODO>">
+                <a href="https://discord.gg/TsYNpDqJgG">
                   <img width="24" height="24" src={discordLogo}>
                   </img>
                 </a>
@@ -91,7 +91,7 @@ const About = () => {
                 {/* <br/> */}
                 {/* <img width="24" height="24" src={discordLogo}>
                 </img> */}
-                <a href="https://discordapp.com/users/<TODO>">
+                <a href="https://discord.gg/TsYNpDqJgG">
                   <img width="24" height="24" src={discordLogo}>
                   </img>
                 </a>
