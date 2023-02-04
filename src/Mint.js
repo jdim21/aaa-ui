@@ -2,6 +2,7 @@ import { useRef } from "react";
 import { useTheme } from '@mui/material/styles'
 import Container from '@mui/material/Container';
 import { CssBaseline, Typography } from "@mui/material";
+import CircularProgress from '@mui/material/CircularProgress';
 import * as React from 'react';
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
@@ -39,6 +40,7 @@ const Mint = () => {
   const theme = useTheme();
   const ref = useRef(null);
   const [currentAccount, setCurrentAccount] = useState(null);
+  const [currMintStatus, setMintStatus] = useState(null);
   // const [boizRemaining, setBoizRemaining] = useState(null);
 
   const checkWalletIsConnected = async () => {
@@ -55,6 +57,7 @@ const Mint = () => {
       const account = accounts[0];
       console.log("Found an authorized account: ", account);
       setCurrentAccount(account);
+      setMintStatus("none");
     } else {
       console.log("No authorized account found!");
     }
@@ -88,8 +91,10 @@ const Mint = () => {
         console.log("Initialize payment");
         let nftTxn = await nftContract.safeMint(currentAccount, { value: ethers.utils.parseEther("10") });
         console.log("Mining... please wait");
+        setMintStatus("minting");
 
         await nftTxn.wait();
+        setMintStatus("none");
 
         console.log("Mined. Txn hash: ", nftTxn.hash);
       }
@@ -108,9 +113,17 @@ const Mint = () => {
   }
 
   const mintNftButton = () => {
+    if (currMintStatus != "minting") {
+      return (
+        <Button variant="contained" style={{marginTop: "1rem", marginRight: "1rem"}} sx={{color: 'primary.dark', backgroundColor: 'primary.light'}}onClick={mintNftHandler}>
+          Mint NFT
+        </Button>
+      )
+    }
     return (
       <Button variant="contained" style={{marginTop: "1rem", marginRight: "1rem"}} sx={{color: 'primary.dark', backgroundColor: 'primary.light'}}onClick={mintNftHandler}>
-        Mint NFT
+        <CircularProgress />
+        Minting...
       </Button>
     )
   }
