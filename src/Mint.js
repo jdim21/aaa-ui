@@ -85,7 +85,17 @@ const Mint = () => {
 
       if (ethereum) {
         const provider = new ethers.providers.Web3Provider(window.ethereum)
+        const { chainId } = await provider.getNetwork();
+        if (chainId != 7700) {
+          alert("Please connect to CANTO!");
+          return;
+        }
         const signer = provider.getSigner();
+        const balance = ethers.utils.formatEther(await signer.getBalance());
+        if (balance < 10) {
+          alert("Insufficient funds to mint!");
+          return;
+        }
         const nftContract = new ethers.Contract(contractAddress, abi, signer);
 
         console.log("Initialize payment");
