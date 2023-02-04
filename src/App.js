@@ -14,6 +14,9 @@ import Home from './Home';
 import Footer from './Footer';
 import { BrowserRouter as Router, Routes, Route}
     from 'react-router-dom';
+import * as buffer from "buffer";
+window.Buffer = buffer.Buffer;
+
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === '#1A2027',

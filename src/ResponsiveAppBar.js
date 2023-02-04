@@ -48,10 +48,9 @@ const ResponsiveAppBar = () => {
       alert("Coming soon!");
       console.log("traits selected..");
     } else if (event.currentTarget.id == "MINT") {
-      alert("Coming soon!");
-      // anchor = (event.target.ownerDocument || document).querySelector(
-      //   "#mint"
-      // );
+      anchor = (event.target.ownerDocument || document).querySelector(
+        "#mint"
+      );
       console.log("mint selected..");
     }
     if (anchor) {
@@ -142,10 +141,9 @@ const ResponsiveAppBar = () => {
             </Box>
             </Popover>
             <Button 
-              // href="mint"
+              href="mint"
               id="MINT"
               key="MINT"
-              onClick={handleMintPopper}
               sx={{ my: 2, color: 'white', display: 'block', fontWeight: 'bold', fontSize: 16, px: 2 }}
             >
               MINT
