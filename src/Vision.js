@@ -2,6 +2,7 @@ import { useRef } from "react";
 import { useTheme } from '@mui/material/styles'
 import Container from '@mui/material/Container';
 import { Button, CssBaseline, Stack, Typography } from "@mui/material";
+import altoLogo from './altoLogo.png'
 import twitterLogo from './twitterLogo.png'
 import discordLogo from './discordLogo.png'
 
@@ -19,6 +20,14 @@ const Vision = () => {
         The Blobby Boiz team are NFT lovers and crypto enthusiasts looking to foster a like-minded community
         to explore and support the CANTO ecosystem.
       </Typography>
+      <div>
+      <Button variant="contained" style={{backgroundColor: theme.palette.primary.dark}} color="secondary" href="https://alto.build/collections/blobbyboiz" sx={{mb: 2}}>
+        <Typography color="white" sx={{pr: 2}} fontWeight="bold">
+          View and Trade the BOIZ!
+        </Typography>
+          <img style={{padding: 0}} width="28" height="24" src={altoLogo}></img>
+      </Button>
+      </div>
       <div>
       <Button variant="contained" style={{backgroundColor: theme.palette.primary.dark}} color="secondary" href="https://twitter.com/blobbyboiz" sx={{mb: 2}}>
         <Typography color="white" sx={{pr: 2}} fontWeight="bold">
