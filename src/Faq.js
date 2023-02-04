@@ -34,6 +34,20 @@ const Faq = () => {
         <Accordion style={{backgroundColor: theme.palette.primary.dark}}>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel3a-content"
+            id="panel3a-header"
+          >
+            <Typography color="white">Wen mint!?</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography color="white" fontWeight="bold">
+                Now! <a href="https://blobbyboiz.com/mint">Mint here</a>
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+        <Accordion style={{backgroundColor: theme.palette.primary.dark}}>
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
             aria-controls="panel2a-content"
             id="panel2a-header"
           >
@@ -51,11 +65,11 @@ const Faq = () => {
             aria-controls="panel3a-content"
             id="panel3a-header"
           >
-            <Typography color="white">Wen mint!?</Typography>
+            <Typography color="white">Where can I view and/or trade my BOIZ?</Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography color="white" fontWeight="bold">
-                Imminently!
+                <a href="https://alto.build/collections/blobbyboiz">Alto</a> NFT Marketplace
             </Typography>
           </AccordionDetails>
         </Accordion>
