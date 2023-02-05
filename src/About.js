@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { useTheme } from '@mui/material/styles'
 import Container from '@mui/material/Container';
-import { CssBaseline, Typography } from "@mui/material";
+import { Button, CssBaseline, Typography } from "@mui/material";
 import * as React from 'react';
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
@@ -101,6 +101,11 @@ const About = () => {
           {/* </div> */}
         {/* </Grid> */}
       </div>
+      <Button variant="contained" style={{backgroundColor: theme.palette.primary.dark}} color="secondary" href="https://blobbyboiz.com/mint" sx={{mb: 2}}>
+        <Typography color="white" sx={{pr: 2}} fontWeight="bold">
+          MINT BLOBBY BOIZ
+        </Typography>
+      </Button>
       {/* </Grid> */}
     </div>);
 }
