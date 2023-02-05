@@ -2,8 +2,6 @@ import { useRef } from "react";
 import { useTheme } from '@mui/material/styles'
 import Container from '@mui/material/Container';
 import { CssBaseline, Typography } from "@mui/material";
-import aaaLogo from './aaaLogo.png';
-import wagLogoHidden from './wagLogoHidden.png';
 import blobbyBoizLogo from './blobbyBoizLogo.png';
 import discordLogo from './discordLogo.png';
 import twitterLogo from './twitterLogo.png';

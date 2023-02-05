@@ -12,8 +12,6 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
-import aaaLogo from './aaaLogo.png'
-import wagLogoHidden from './wagLogoHidden.png'
 import blobbyBoizLogo from './blobbyBoizLogo.png';
 import { Popover } from '@mui/material';
 import { Link } from "react-router-dom";

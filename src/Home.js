@@ -1,7 +1,6 @@
 import React from 'react';
 import { Box, Stack, Paper, CssBaseline } from '@mui/material';
 import { styled } from '@mui/material/styles';
-import wagBannerGif from './wagBannerGif.gif';
 import boizBanner from './boizBanner.png';
 import bannerGif from './bannerGif.gif';
 import Vision from './Vision';

@@ -3,7 +3,6 @@ import './App.css';
 import ResponsiveAppBar from './ResponsiveAppBar';
 import { Box, Stack, Paper, CssBaseline } from '@mui/material';
 import { styled } from '@mui/material/styles';
-import wagBannerGif from './wagBannerGif.gif';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from './AaaTheme';
 import Vision from './Vision';
