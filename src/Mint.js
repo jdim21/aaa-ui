@@ -119,7 +119,7 @@ const Mint = () => {
   const mintNftButton = () => {
     if (currMintStatus != "minting") {
       return (
-        <Button variant="contained" style={{marginTop: "1rem", marginRight: "1rem"}} sx={{color: 'primary.dark', backgroundColor: 'primary.light'}}onClick={mintNftHandler}>
+        <Button disabled="true" variant="contained" style={{marginTop: "1rem", marginRight: "1rem"}} sx={{color: 'primary.dark', backgroundColor: 'primary.light'}}onClick={mintNftHandler}>
           Mint NFT
         </Button>
       )
@@ -165,7 +165,7 @@ const Mint = () => {
         <Typography color={"white"} sx={{pt: 0, pb: 1}} variant="h6" fontWeight="bold">Cost: FREE</Typography>
         <div></div>
         {/* <Typography color={"white"} sx={{pt: 2, pb: 2}} variant="p" fontWeight="bold">Remaining: {boizRemaining}</Typography> */}
-        <Typography color={"white"} sx={{pt: 2, pb: 2}} variant="p" fontWeight="bold">Status: LIVE!</Typography>
+        <Typography color={"white"} sx={{pt: 2, pb: 2}} variant="p" fontWeight="bold">Status: SOLD OUT!</Typography>
       </Box>
 
       {/* <Typography color={theme.palette.primary.dark} sx={{pt: 5, pb: 1}} variant="h4" fontWeight="bold">Instructions:</Typography>
