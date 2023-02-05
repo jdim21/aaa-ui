@@ -148,7 +148,9 @@ const Mint = () => {
     {/* <p>Your account: {this.state.account}</p> */}
     <Footer></Footer>
       <Box sx={{
-        width: 500,
+        maxWidth: 400,
+        minWidth: 300,
+        width: '100vw',
         height: 530,
         backgroundColor: 'primary.main',
         margin: "0 auto", 
@@ -158,7 +160,7 @@ const Mint = () => {
       }}>
         <Typography color={"white"} sx={{pt: 5, pb: 1}} variant="h4" fontWeight="bold">MINT BLOBBY BOIZ</Typography>
         {/* <Typography color={theme.palette.primary.dark} sx={{pt: 5, pb: 1}} variant="h3" fontWeight="bold">MINT NFT</Typography> */}
-        <Box sx={{borderRadius: 12, paddingTop: "1.5rem"}}>
+        <Box sx={{minWidth: 300, borderRadius: 12, paddingTop: "1.5rem"}}>
           <img src={boizGif}></img>
         </Box>
         {currentAccount ? mintNftButton() : connectWalletButton()}
