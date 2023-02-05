@@ -97,7 +97,7 @@ const Faq = () => {
           </AccordionSummary>
           <AccordionDetails>
             <Typography color="white" fontWeight="bold">
-                5 CANTO
+                FREE!!!
             </Typography>
           </AccordionDetails>
         </Accordion>
