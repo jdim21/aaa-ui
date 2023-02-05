@@ -85,15 +85,15 @@ const Mint = () => {
           return;
         }
         const signer = provider.getSigner();
-        const balance = ethers.utils.formatEther(await signer.getBalance());
-        if (balance < 5) {
-          alert("Insufficient funds to mint!");
-          return;
-        }
+        // const balance = ethers.utils.formatEther(await signer.getBalance());
+        // if (balance < 5) {
+        //   alert("Insufficient funds to mint!");
+        //   return;
+        // }
         const nftContract = new ethers.Contract(contractAddress, abi, signer);
 
         console.log("Initialize payment");
-        let nftTxn = await nftContract.safeMint(currentAccount, { value: ethers.utils.parseEther("5") });
+        let nftTxn = await nftContract.safeMint(currentAccount, { value: ethers.utils.parseEther("0") });
         console.log("Mining... please wait");
         setMintStatus("minting");
 
@@ -162,7 +162,7 @@ const Mint = () => {
           MINT
         </Button> */}
         <div style={{marginTop: "1rem"}}></div>
-        <Typography color={"white"} sx={{pt: 0, pb: 1}} variant="h6" fontWeight="bold">Cost: 5 CANTO</Typography>
+        <Typography color={"white"} sx={{pt: 0, pb: 1}} variant="h6" fontWeight="bold">Cost: FREE</Typography>
         <div></div>
         {/* <Typography color={"white"} sx={{pt: 2, pb: 2}} variant="p" fontWeight="bold">Remaining: {boizRemaining}</Typography> */}
         <Typography color={"white"} sx={{pt: 2, pb: 2}} variant="p" fontWeight="bold">Status: LIVE!</Typography>
