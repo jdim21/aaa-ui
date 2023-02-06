@@ -44,12 +44,10 @@ const ResponsiveAppBar = () => {
       );
     } else if (event.currentTarget.id == "TRAITS") {
       alert("Coming soon!");
-      console.log("traits selected..");
     } else if (event.currentTarget.id == "MINT") {
       anchor = (event.target.ownerDocument || document).querySelector(
         "#mint"
       );
-      console.log("mint selected..");
     }
     if (anchor) {
       anchor.scrollIntoView({ behavior: "smooth", block: "center" });
@@ -142,6 +140,7 @@ const ResponsiveAppBar = () => {
               href="mint"
               id="MINT"
               key="MINT"
+              disabled="true"
               sx={{ my: 2, color: 'white', display: 'block', fontWeight: 'bold', fontSize: 16, px: 2 }}
             >
               MINT

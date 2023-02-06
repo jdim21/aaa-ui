@@ -41,7 +41,7 @@ const Faq = () => {
           </AccordionSummary>
           <AccordionDetails>
             <Typography color="white" fontWeight="bold">
-                Now! <a href="https://blobbyboiz.com/mint">Mint here</a>
+                The free mint has concluded.
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -55,7 +55,7 @@ const Faq = () => {
           </AccordionSummary>
           <AccordionDetails>
             <Typography color="white" fontWeight="bold">
-                It is first come, first served!
+                It was first come, first served!
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -79,7 +79,7 @@ const Faq = () => {
             aria-controls="panel4a-content"
             id="panel4a-header"
           >
-            <Typography color="white">What size will the collection be?</Typography>
+            <Typography color="white">What is the size of the collection?</Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography color="white" fontWeight="bold">
@@ -93,7 +93,7 @@ const Faq = () => {
             aria-controls="panel5a-content"
             id="panel5a-header"
           >
-            <Typography color="white">What is the mint price?</Typography>
+            <Typography color="white">What was the mint price?</Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography color="white" fontWeight="bold">
