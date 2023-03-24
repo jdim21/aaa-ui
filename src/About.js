@@ -98,12 +98,12 @@ const About = () => {
           {/* </div> */}
         {/* </Grid> */}
       </div>
-      <Button variant="contained" style={{ backgroundColor: theme.palette.primary.dark}} color="secondary" size="large" href="https://alto.build/collections/blobbyboiz" sx={{mb: 7}}>
-        <img style={{padding: 0}} width="28" height="24" src={altoLogo}></img>
+      <Button variant="contained" style={{ backgroundColor: theme.palette.primary.dark}} color="secondary" size="large" href="https://TODO" sx={{mb: 7}}>
+        {/* <img style={{padding: 0}} width="28" height="24" src={altoLogo}></img> */}
         <Typography variant="h4" color="white" sx={{pl: 2, pr: 2}} fontWeight="bold">
           VIEW AND TRADE BLOBBY BOIZ
         </Typography>
-        <img style={{padding: 0}} width="28" height="24" src={altoLogo}></img>
+        {/* <img style={{padding: 0}} width="28" height="24" src={altoLogo}></img> */}
       </Button>
       {/* </Grid> */}
     </div>);

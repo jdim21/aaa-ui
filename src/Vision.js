@@ -21,11 +21,11 @@ const Vision = () => {
         to explore and support the zkSync ecosystem.
       </Typography>
       <div>
-      <Button variant="contained" style={{backgroundColor: theme.palette.primary.dark}} color="secondary" href="https://alto.build/collections/blobbyboiz" sx={{mb: 2}}>
+      <Button variant="contained" style={{backgroundColor: theme.palette.primary.dark}} color="secondary" href="https://TODO" sx={{mb: 2}}>
         <Typography color="white" sx={{pr: 2}} fontWeight="bold">
           View and Trade the BOIZ!
         </Typography>
-          <img style={{padding: 0}} width="28" height="24" src={altoLogo}></img>
+          {/* <img style={{padding: 0}} width="28" height="24" src={altoLogo}></img> */}
       </Button>
       </div>
       <div>

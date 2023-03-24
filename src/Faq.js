@@ -41,7 +41,7 @@ const Faq = () => {
           </AccordionSummary>
           <AccordionDetails>
             <Typography color="white" fontWeight="bold">
-                The free mint has concluded.
+                Soon!
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -55,7 +55,7 @@ const Faq = () => {
           </AccordionSummary>
           <AccordionDetails>
             <Typography color="white" fontWeight="bold">
-                It was first come, first served!
+                It will be first come first served, however, early supporters will be guaranteed spots.
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -69,7 +69,8 @@ const Faq = () => {
           </AccordionSummary>
           <AccordionDetails>
             <Typography color="white" fontWeight="bold">
-                <a href="https://alto.build/collections/blobbyboiz">Alto</a> NFT Marketplace
+              TBD
+                {/* <a href="https://alto.build/collections/blobbyboiz">Alto</a> NFT Marketplace */}
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -97,7 +98,7 @@ const Faq = () => {
           </AccordionSummary>
           <AccordionDetails>
             <Typography color="white" fontWeight="bold">
-                FREE!!!
+                Virtually free
             </Typography>
           </AccordionDetails>
         </Accordion>
