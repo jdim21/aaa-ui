@@ -14,11 +14,10 @@ const Vision = () => {
     <CssBaseline />
       <Typography color="white" sx={{pt: 5, pb: 1}} variant="h3" fontWeight="bold">VISION</Typography>
       <Typography color="white" sx={{pt: 1, pb: 5}} variant="h6" fontWeight="bold" >
-        Blobby Boiz aim to support the genesis of zkSync Era Mainnet as we believe
-        it is a fast, innovative, & secure network helping to push the boundaries of EVM scaling. NFTs are a crucial part of a growing ecosystem,
+        Blobby Boiz aim to support the growing NFT landscape.
+        NFTs are a crucial part of the growing crypto ecosystem,
         and a cute PFP collection is a crucial part to having fun!
-        The Blobby Boiz team are NFT lovers and crypto enthusiasts looking to foster a like-minded community
-        to explore and support the zkSync ecosystem.
+        The Blobby Boiz team are NFT lovers and crypto enthusiasts looking to foster a like-minded community.
       </Typography>
       <div>
       <Button variant="contained" style={{backgroundColor: theme.palette.primary.dark}} color="secondary" href="https://TODO" sx={{mb: 2}}>

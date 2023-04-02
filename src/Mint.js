@@ -81,7 +81,8 @@ const Mint = () => {
         const provider = new ethers.providers.Web3Provider(window.ethereum)
         const { chainId } = await provider.getNetwork();
         if (chainId != 7700) {
-          alert("Please connect to CANTO!");
+          alert("Please connect the correct wallet/network!");
+          // alert("Please connect to zkSync Era Mainnet!");
           return;
         }
         const signer = provider.getSigner();
